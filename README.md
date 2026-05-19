@@ -1,2 +1,0 @@
-# nordstrom
-daa
