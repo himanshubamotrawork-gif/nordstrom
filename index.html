@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Nordstrom – $500 Gift Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f4f5f7;
+color:#002855;
+}
+
+.main-card{
+max-width:390px;
+margin:0 auto;
+min-height:100vh;
+background:#e9ecf0;
+padding-bottom:30px;
+}
+
+/* HEADER */
+.topbar{
+background:#fff;
+padding:14px 16px;
+display:flex;
+align-items:center;
+justify-content:flex-start;
+border-bottom:1px solid #c8d1dc;
+}
+
+.logo-wrap{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.logo-icon{
+width:28px;
+height:28px;
+border-radius:50%;
+background:#002855;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:15px;
+font-weight:700;
+}
+
+.brand{
+font-size:24px;
+weight:700;
+letter-spacing:-0.5px;
+color:#002855;
+}
+
+/* MAIN TITLE */
+.hero-title{
+font-size:38px;
+line-height:1.05;
+font-weight:800;
+letter-spacing:-2px;
+text-align:center;
+padding:34px 18px 20px;
+color:#002855;
+}
+
+/* STEP CARDS & FAQ CARDS */
+.step-card, .faq-card{
+background:#fff;
+margin:0 18px 12px;
+border-radius:16px;
+padding:18px 16px;
+display:flex;
+gap:14px;
+box-shadow:0 2px 6px rgba(0,40,85,.06);
+}
+
+.step-num{
+width:38px;
+height:38px;
+border-radius:50%;
+border:1px solid #002855;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
+font-weight:700;
+flex-shrink:0;
+color:#002855;
+}
+
+.step-content, .faq-content{
+width:100%;
+}
+
+.step-content h3, .faq-content h3{
+font-size:15px;
+font-weight:700;
+margin-bottom:4px;
+color:#002855;
+}
+
+.step-content p, .faq-content p{
+font-size:14px;
+color:#53677f;
+line-height:1.45;
+}
+
+/* FAQ SPECIFIC */
+.faq-title-main{
+font-size:22px;
+font-weight:800;
+color:#002855;
+margin:28px 18px 14px;
+letter-spacing: -0.5px;
+}
+
+.faq-header-row{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+margin-bottom:6px;
+}
+
+.faq-toggle-icon{
+font-size:18px;
+font-weight:700;
+color:#002855;
+line-height:1;
+margin-left:8px;
+}
+
+/* BUTTON SECTION */
+.btn-container{
+padding:12px 18px;
+text-align:center;
+}
+
+.cta-btn{
+width:100%;
+background:#002855;
+color:#fff;
+border:none;
+border-radius:999px;
+padding:18px;
+font-size:15px;
+font-weight:700;
+margin-bottom:8px;
+cursor:pointer;
+box-shadow: 0 4px 12px rgba(0, 40, 85, 0.15);
+}
+
+.sub-text{
+font-size:11px;
+color:#53677f;
+margin-bottom:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main-card">
+
+<div class="topbar">
+<div class="logo-wrap">
+<div class="logo-icon">Ω</div>
+<div class="brand">Nordstrom</div>
+</div>
+</div>
+
+<div class="hero-title">
+Claim Your $500<br>Nordstrom HaulsCard
+</div>
+
+<div class="step-card">
+<div class="step-num">1</div>
+<div class="step-content">
+<h3>Tap the Button Below</h3>
+<p>Click “Get My HaulsCard” to go to the official offer page.</p>
+</div>
+</div>
+
+<div class="step-card">
+<div class="step-num">2</div>
+<div class="step-content">
+<h3>Enter Your Valid Email</h3>
+<p>Continue to the next page and submit your email to start.</p>
+</div>
+</div>
+
+<div class="step-card">
+<div class="step-num">3</div>
+<div class="step-content">
+<h3>Complete 4–5 deals</h3>
+<p>Deals may include surveys, app installs, trial offers, or similar steps.</p>
+</div>
+</div>
+
+<div class="step-card">
+<div class="step-num">4</div>
+<div class="step-content">
+<h3>Receive Your Reward</h3>
+<p>After completing the required Deals, you can qualify for your reward.</p>
+</div>
+</div>
+  
+<div class="step-card">
+<div class="step-num">?</div>
+<div class="step-content">
+<h3>What happens next?</h3>
+<p>You’ll be taken to the next page, where you’ll answer a few short questions, enter your email, and complete the featured Deals.</p>
+</div>
+</div>
+
+<div class="btn-container">
+<button class="cta-btn" onclick="redirect()">Continue to Next Step →</button>
+<div class="sub-text">Eligibility and completion requirements apply.</div>
+</div>
+
+<h2 class="faq-title-main">Frequently Asked Questions</h2>
+
+<div class="faq-card">
+<div class="faq-content">
+<div class="faq-header-row">
+<h3>How do I get the discount?</h3>
+<span class="faq-toggle-icon">-</span>
+</div>
+<p>Click the button above, enter your email on the next page, and complete the required offers provided to unlock the discount.</p>
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-content">
+<div class="faq-header-row">
+<h3>How many deals do I have to do?</h3>
+<span class="faq-toggle-icon">-</span>
+</div>
+<p>The number of required offers can vary, but most users are typically asked to complete about 4–5 deals</p>
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-content">
+<div class="faq-header-row">
+<h3>How long do the deals take?</h3>
+<span class="faq-toggle-icon">-</span>
+</div>
+<p>The time varies based on the offers available. Some can be completed in just a few minutes, while others may take a bit longer.</p>
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-content">
+<div class="faq-header-row">
+<h3>When will I receive my reward?</h3>
+<span class="faq-toggle-icon">-</span>
+</div>
+<p>Once you’ve completed the required offers, you may become eligible to receive the reward displayed on the next page.</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function redirect(){
+window.location.href="https://trksy.org/aff_c?offer_id=1325&aff_id=17763";
+}
+</script>
+
+</body>
+</html>
