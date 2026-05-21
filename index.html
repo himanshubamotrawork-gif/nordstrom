@@ -37,25 +37,6 @@ justify-content:flex-start;
 border-bottom:1px solid #c8d1dc;
 }
 
-.logo-wrap{
-display:flex;
-align-items:center;
-gap:8px;
-}
-
-.logo-icon{
-width:28px;
-height:28px;
-border-radius:50%;
-background:#002855;
-color:#fff;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:15px;
-font-weight:700;
-}
-
 .brand{
 font-size:24px;
 weight:700;
@@ -79,21 +60,22 @@ color:#002855;
 background:#fff;
 margin:0 18px 12px;
 border-radius:16px;
-padding:18px 16px;
+padding:12px 14px; /* DECREASED PADDING */
 display:flex;
-gap:14px;
+gap:12px; /* SLIGHTLY REDUCED GAP */
+align-items: center; /* VERTICALLY CENTERING STEPS */
 box-shadow:0 2px 6px rgba(0,40,85,.06);
 }
 
 .step-num{
-width:38px;
-height:38px;
+width:32px; /* DECREASED SIZE */
+height:32px; /* DECREASED SIZE */
 border-radius:50%;
 border:1px solid #002855;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:14px;
+font-size:13px; /* SLIGHTLY SMALLER FONT */
 font-weight:700;
 flex-shrink:0;
 color:#002855;
@@ -104,16 +86,16 @@ width:100%;
 }
 
 .step-content h3, .faq-content h3{
-font-size:15px;
+font-size:14px; /* DECREASED SIZE */
 font-weight:700;
-margin-bottom:4px;
+margin-bottom:2px; /* REDUCED SPACE */
 color:#002855;
 }
 
 .step-content p, .faq-content p{
-font-size:14px;
+font-size:13px; /* DECREASED SIZE */
 color:#53677f;
-line-height:1.45;
+line-height:1.4;
 }
 
 /* FAQ SPECIFIC */
@@ -173,10 +155,7 @@ margin-bottom:12px;
 <div class="main-card">
 
 <div class="topbar">
-<div class="logo-wrap">
-<div class="logo-icon">Ω</div>
 <div class="brand">Nordstrom</div>
-</div>
 </div>
 
 <div class="hero-title">
@@ -214,7 +193,7 @@ Claim Your $500<br>Nordstrom HaulsCard
 <p>After completing the required Deals, you can qualify for your reward.</p>
 </div>
 </div>
-  
+  
 <div class="step-card">
 <div class="step-num">?</div>
 <div class="step-content">
